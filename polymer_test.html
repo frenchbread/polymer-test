@@ -1,0 +1,17 @@
+<head>
+
+</head>
+<body>
+    {{> helperOne }}
+</body>
+
+<template name="helperOne">
+    <p> This is a checkbox: {{> paper_checkbox attrs=attributeObject}} </p>
+
+    <hr/>
+
+    <!--use a helper to import the link tags automatically -->
+    {{> paper_checkbox_link}}
+    <!-- Use the component as you normally would -->
+    <p> This is a different approach to using checkbox: <paper-checkbox checked></paper-checkbox> </p>
+</template>
